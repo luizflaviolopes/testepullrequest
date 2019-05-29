@@ -1,0 +1,21 @@
+.main-container {
+  min-height: 100vh;
+  font-size: 0;
+}
+
+.item-selector {
+  background-color: lightgray;
+  border-radius: 5px;
+  height: 100%;
+  padding: 5%;
+  position: relative;
+}
+
+.pilha-container {
+  height: 100%;
+  width: 30%;
+}
+
+.fullHeigth {
+  min-height: 100vh;
+}

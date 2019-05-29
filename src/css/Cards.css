@@ -1,0 +1,78 @@
+.card-decision {
+  font-size: small;
+  width: 30%;
+}
+
+.card-decision.opened {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+div.backdrop {
+  background-color: rgba(128, 128, 128, 0.336);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card-resume {
+  font-size: x-small;
+  width: 30%;
+  text-align: center;
+}
+
+div.card-content {
+  cursor: pointer;
+  text-align: center;
+}
+
+div.card-content .card-body {
+  padding: 2px;
+}
+
+.button-icon {
+  margin-left: 8px;
+}
+
+.card-footer {
+  text-align: right;
+  padding: 0 0 0 0.5rem;
+}
+
+.card-propertie {
+  display: block;
+  margin: 0.5em 0;
+}
+
+.price {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: red;
+}
+
+.card-propertie > div {
+  display: table-cell;
+}
+
+.card-propertie span {
+  margin-right: 0.5rem;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.card-propertie p {
+  display: table-cell;
+  text-align: justify;
+}
+
+.card-header {
+  text-align: center;
+  padding: 0.7em 0.7em;
+  background-color: gray;
+  border-radius: 5px 5px 0 0;
+}
