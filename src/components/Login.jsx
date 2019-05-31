@@ -61,7 +61,7 @@ class Login extends React.Component {
       this.setState({ error: "Preencha e-mail e senha para continuar!" });
     } else {
       try {
-        if (await login(Login, Password)) this.props.history.push("/Unidades");
+        if (await login(Login, Password)) this.props.history.push("/Intra");
         else
           this.setState({
             error: "Login Inválido"

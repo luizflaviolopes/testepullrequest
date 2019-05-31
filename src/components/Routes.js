@@ -5,6 +5,8 @@ import { isAuthenticated, logout } from "../Services/Auth";
 import Login from "./Login";
 import { Unidades } from "./Unidades";
 import DynamicSelector from "./DynamicSelector";
+import { TesteLogin } from "./TesteLogin";
+
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -19,12 +21,22 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
   />
 );
 
+const Logado = () =>
+{
+  return(<div><span>voce está logado!</span>
+  <div><a href="/sessao">ir para sessao</a> </div>
+  
+  </div>)
+}
+
 const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Login} />
       <PrivateRoute path="/Stack/:un" component={DynamicSelector} />
-      <PrivateRoute path="/Unidades" component={Unidades} />
+      <Route path="/Unidades" component={Unidades} />
+      <PrivateRoute path="/Intra" component={Logado} />
+      <Route path="/Sessao" component={TesteLogin} />
       <Route path="*" component={Login} />
     </Switch>
   </BrowserRouter>
